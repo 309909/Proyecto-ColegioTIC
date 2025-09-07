@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo - Liceo F-860</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .card-docente img {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo Liceo F-860" height="50" class="me-2">
+        Liceo F-860
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-landmark me-1"></i>Historia</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html"><i class="fas fa-newspaper me-1"></i>Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html"><i class="fas fa-images me-1"></i>Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope me-1"></i>Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold" href="staff.html"><i class="fas fa-users me-1"></i>Equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="pie.html"><i class="fas fa-book me-1"></i>MCE-PIE</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5" style="margin-top: 100px;">
+    <div class="container">
+      <h1 class="display-4 fw-bold text-center mb-5">Nuestro Equipo</h1>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-docente text-center shadow">
+            <img src="assets/images/docente1.jpg" class="card-img-top" alt="Docente 1">
+            <div class="card-body">
+              <h5 class="fw-bold">Prof. María González</h5>
+              <p class="text-muted">Jefa de UTP</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-docente text-center shadow">
+            <img src="assets/images/docente2.jpg" class="card-img-top" alt="Docente 2">
+            <div class="card-body">
+              <h5 class="fw-bold">Prof. Juan Pérez</h5>
+              <p class="text-muted">Encargado de Convivencia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-docente text-center shadow">
+            <img src="assets/images/docente3.jpg" class="card-img-top" alt="Docente 3">
+            <div class="card-body">
+              <h5 class="fw-bold">Prof. Laura Díaz</h5>
+              <p class="text-muted">Orientadora</p>
+            </div>
+          </div>
+        </div>
+        <!-- Puedes agregar más docentes duplicando esta estructura -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-white py-4 bg-dark text-center">
+    <div class="container">
+      <p>&copy; 2025 Liceo F-860 de María Pinto - Departamento de Informática. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

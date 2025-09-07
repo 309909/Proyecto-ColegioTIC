@@ -1,0 +1,223 @@
+/* ===== FUENTE BASE ===== */
+body {
+  font-family: 'Inter Tight', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9; /* Gris muy claro */
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+}
+
+/* ===== QUOTE / FRASE INSPIRADORA ===== */
+.quote-icon i {
+  font-size: 3rem;
+  color: #ffc107;
+}
+
+.decoration-bar {
+  width: 80px;
+  height: 4px;
+  background-color: #ffc107;
+}
+
+/* ===== GALERÍA ===== */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+  transform: scale(1.02);
+}
+
+/* ===== CARDS (NOVEDADES) ===== */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-footer {
+  background: transparent;
+  border-top: none;
+}
+
+/* ===== ACCORDION (PREGUNTAS FRECUENTES) ===== */
+.accordion-button {
+  font-weight: 500;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f9f9f9;
+}
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+.form-control {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1.display-4 {
+  margin-bottom: 30px; /* Espaciado entre título y formulario */
+}
+
+form {
+  margin-top: 20px; /* Espaciado adicional */
+}
+
+button.btn-primary {
+  background-color: #0066cc; /* Color primario del liceo */
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #004d99;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===== MAPA ===== */
+.map-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra al mapa */
+}
+
+/* ===== ESTILO PARA EL TÍTULO "CONTACTANOS" ===== */
+.contact-title {
+  background-color: #3f5ee7; /* Fondo destacado */
+  color: white; /* Color del texto */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  display: block; /* Asegura que el contenedor sea un bloque y ocupe todo el ancho disponible */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  width: fit-content; /* Asegura que el contenedor tenga solo el ancho necesario */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #0056b3 !important; /* Azul institucional */
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107 !important; /* Amarillo al hacer hover */
+  text-decoration: underline !important;
+}
+
+footer .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  background-color: #ffc107; /* Amarillo */
+  color: #0056b3 !important; /* Azul */
+  transform: translateY(-3px);
+}
+
+/* ===== MAPA RESPONSIVE ===== */
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== ESTILOS PARA FOOTER EN PANTALLAS MÁS PEQUEÑAS ===== */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer .social-icons a {
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 15px;
+}
+
+footer .social-icons a:hover {
+  color: #ffc107;
+}
+
+footer #map {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+/* ===== AJUSTES RESPONSIVOS ===== */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
